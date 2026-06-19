@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ErrorView } from '../components/ErrorView';
+---
+
+<Layout title="404 - Page Not Found | Decision Maker">
+	<ErrorView code="404" client:load />
+</Layout>

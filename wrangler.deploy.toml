@@ -1,0 +1,14 @@
+name = "welldecisionmaker"
+main = "dist/server/entry.mjs"
+compatibility_date = "2024-04-03"
+
+[assets]
+directory = "dist/client"
+binding = "ASSETS"
+
+[[kv_namespaces]]
+binding = "SESSION"
+# id = "your-kv-namespace-id-here"
+
+[images]
+binding = "IMAGES"

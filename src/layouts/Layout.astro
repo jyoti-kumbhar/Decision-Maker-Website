@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+const { 
+	title = "Decision Maker - Easy Random Wheel Spinner & Generator",
+	description = "Stop overthinking! Use our free Decision Maker wheel to make random choices quickly. Perfect for picking lunch, games, or any tough decision. Try the easy decision maker spinner now."
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content="Decision Maker, decision maker wheel, easy decision maker, random decision maker, wheel decision maker, decision maker spinner, spin wheel decision maker, fun decision maker, decision maker generator" />
+		<meta name="author" content="Decision Maker" />
+		<link rel="canonical" href="https://welldecisionmaker.com/" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://welldecisionmaker.com/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://welldecisionmaker.com/favicon.svg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://welldecisionmaker.com/" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="https://welldecisionmaker.com/favicon.svg" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70RV87G8W8"></script>
+		<script is:inline>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-70RV87G8W8');
+		</script>
+
+		<script is:inline>
+			const settings = localStorage.getItem('dm_settings');
+			if (settings) {
+				const { theme } = JSON.parse(settings);
+				if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+					document.documentElement.classList.add('dark');
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

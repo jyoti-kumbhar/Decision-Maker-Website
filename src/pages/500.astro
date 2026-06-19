@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ErrorView } from '../components/ErrorView';
+---
+
+<Layout title="500 - Internal Server Error | Decision Maker">
+	<ErrorView code="500" client:load />
+</Layout>

@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { HomeView } from '../components/HomeView';
+---
+
+<Layout title="Decision Maker - Easy Random Wheel & Decision Generator">
+	<script type="application/ld+json" is:inline>
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Who is a decision-maker in a family?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "In a family, a decision-maker is typically one or more members who hold the authority or responsibility to make choices that affect the household. This often includes parents or guardians, but can also involve other family members depending on the family's structure and the nature of the decision."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What is a decision-making process?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A decision-making process is a series of steps taken by an individual or group to determine the best course of action among several alternatives. It generally involves identifying the problem, gathering information, evaluating options, making the choice, and reviewing the outcome."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What does decision-maker mean?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A decision-maker is a person or entity responsible for making strategic, tactical, or operational choices. They are the ones who have the power to select a final course of action from various possibilities to achieve a specific goal or resolve a problem."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What is a random decision maker?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A random decision maker is a tool or method (like a coin flip, dice roll, or an online random wheel) that selects an option from a list without any bias or logical preference. It is often used to resolve trivial dilemmas, overcome decision fatigue, or ensure fairness in selections."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How to get to the decision maker in sales?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "To reach the decision maker in sales, you should first research the organization to identify who holds the purchasing power. Use professional networks like LinkedIn, ask for referrals, and tailor your communication to address their specific pain points and business goals to get past 'gatekeepers'."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "An effective decision maker should...",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "An effective decision maker should be able to analyze information objectively, consider long-term consequences, remain decisive under pressure, and be willing to take responsibility for the outcomes. They also know when to trust their intuition and when to rely on data."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What is a decision maker?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A decision maker is someone who makes important decisions. In a business context, this is often a high-level executive or manager. In everyday life, everyone acts as a decision maker for their personal choices."
+					}
+				}
+			]
+		}
+	</script>
+	<HomeView client:load />
+</Layout>

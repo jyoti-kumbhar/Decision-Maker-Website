@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "node",
+      "args": [
+        "G:\\mcp-test\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js",
+        "G:\\jyoti\\development\\welldecisionmaker.com"
+      ]
+    }
+  }
+}

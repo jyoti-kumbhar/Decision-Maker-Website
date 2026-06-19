@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { HistoryPage } from '../components/HistoryPage';
+---
+
+<Layout 
+	title="Decision History - View Your Past Random Choices | Decision Maker"
+	description="Review your past choices and results from the random decision maker wheel. Keep track of your decision-making journey."
+>
+	<HistoryPage client:load />
+</Layout>
